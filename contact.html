@@ -20,10 +20,10 @@
     <!--Adding in the header for the navbar section to separate between header and main body of the site. -->
 
     <header>
-
-
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navigation</a>
+            <a class="navbar-brand" href="#">
+                <h1>Travis Ko</h1>
+            </a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,29 +31,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link"
-                            href="index.html">Home/About
+                        <a class="nav-link" href="index.html">Home/About
                             <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link"
-                            href="portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link"
-                            href="contact.html">Contact
+                        <a class="nav-link" href="contact.html">Contact
                             <span class="sr-only">(current)</span></a>
                     </li>
-                        </div>
-                    </li>
-
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                        Search
-                    </button>
-                </form>
             </div>
         </nav>
     </header>
@@ -75,29 +62,37 @@
 
     <div class="wrapper">
 
-        <div class="jumbotron">
-            <h1 class="display-4">My Bio</h1>
-            <h2>Name: Travis Ko</h2>
+
+
+        <div class="card" style="width: 40rem;">
+            <h1 class="display-4">Contact</h1>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="https://github.com/TechKoSpeaks/Portfolio-Responsive-Bootstrap/blob/main/Profile%20Picture%201.jpg?raw=true"
-                            alt="profile picture" class="rounded-circle">
+                        <img src="Profile Picture 1.jpg" alt="profile picture" class="rounded-circle">
                     </div>
-                    <div class="col-md-6">
-                        <p class="lead">I was born in Seattle, and grew up in the area attending Garfield High School
-                            and focusing mainly on soccer and fine art. Following graduation I was recruited to a small
-                            college in the Laguna Beach area on a full ride sports
-                            scholarship, and graduated from Soka University of America in 2012. I subsequently moved
-                            back to Seattle,
-                            and focused on working in finance, spending over 7 years in the financial industry.
-                            Eventually attaining the title of application support analyst, I became
-                            intrigued in coding as a new career path, and subsequently found the UCSD Coding Bootcamp. I
-                            love coding, frustrating though it can be it's extremely exciting to see the pay off of a
-                            working code.</p>
+
+                    <!--Here we add in the box for contact information, including name, email address and message for contact.-->
+
+                    <div class="row">
+                        <div class="col-md-8" style="width: 40rem;">
+                            <form action="/action_page.php">
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="name" class="form-control" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address:</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message:</label>
+                                    <textarea class="form-control" rows="5" id="message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </form>
+                        </div>
                     </div>
-                    <hr class="my-4">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Main Page</a>
                 </div>
             </div>
         </div>
